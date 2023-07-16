@@ -1,0 +1,172 @@
+.titulo_prod { 
+  text-align: center;
+  margin:10pt;
+  font-size:30pt;
+  color:#FFCC00;
+  font-family: Handlee;
+}
+
+#listado-product{
+  margin:auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width:1000px;
+  display: grid;
+  gap: 40px;
+  min-height: 200px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.produ-item{
+  width:80%;
+  margin:auto;
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  background-color: #fcf4ea;
+  box-shadow: 1px 3px 3px #232322;
+  padding: 10px;
+  gap: 5px;
+}
+.produ-name{
+  margin-top:5px;  
+  text-align: center;
+  font-weight: bold;
+  font-family: Handlee;  
+}
+.produ-name a{
+  color:rgb(105, 27, 27);
+  font-size:15pt;
+}
+.produ-image{
+  width: 200px;
+  height: 180px;
+  display: flex;
+  text-align: center;
+  margin:auto;
+}
+
+#container-descrip{
+  
+  display:flex;
+  justify-content: center;
+  width: 85%;
+  margin: 20px;
+  background-color: #e8e4df;
+  box-shadow: 1px 3px 3px #232322;
+  border-radius: 2%;
+  flex-direction: column;
+}
+
+.titulop{
+  margin:auto;
+}
+  
+.titulop h1{
+  margin-top:10px;
+  font-size:20pt;
+  color:rgb(171, 41, 41);
+  font-family: Handlee;
+}
+  
+.img-descrip{
+  display:flex;
+  margin-left: 30px;
+  vertical-align:baseline;
+  text-align:justify;
+  width:90%;  
+  margin-bottom: 20px; 
+  gap:10px;
+}
+
+.img-container img{
+  height: 240px;
+  width: 300px;
+}
+  
+.descrip{
+  font-size: 13pt;
+  font-family: Handlee;
+  color:black;
+  text-align:justify;
+}
+
+.descrip p{
+  font-weight:bold;
+}
+.categoria{
+  text-align: center;
+  font-family: Handlee;
+  font-size: 14pt;
+}
+
+
+
+
+@media only screen and (max-width:300px){
+#container-descrip{
+  width: 85%;
+}
+.img-descrip{
+  flex-direction: column;
+}
+.img-container img{
+  height: auto;
+  width: 80%;
+}
+.descrip{
+  width: 80%;
+}
+
+}
+
+@media only screen and (max-width:810px){
+#container-descrip{
+  width: 85%;
+}
+.img-descrip{
+  flex-direction: column;
+}
+.img-container img{
+  height: 95%;
+  width: 80%;
+}
+.descrip{
+  width: 80%;
+}
+#listado-product{
+  margin:auto;
+  width: 90%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+}
+.produ-image{
+   width: 85%;
+}
+.titulo_prod { 
+  font-size:25pt;
+}
+}
+
+@media only screen and (max-width:550px){
+#listado-product{
+  margin:auto;
+  width: 70%;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+}
+.produ-item{
+  width:80%;
+  margin:auto;
+}
+.produ-image{
+  width: 80%;
+}
+}
+
+@media only screen and (min-width:810px){
+.produ-image:hover{
+  width: 230px;
+  height: 210px;
+}
+}

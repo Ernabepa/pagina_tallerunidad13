@@ -1,0 +1,30 @@
+#container-text{
+    display:flex;
+    vertical-align: text-bottom;
+    font-size: 15pt; 
+    font-family: Kalam;
+    color:rgba(88, 3, 96, 0.886);
+    padding: 20px 20px;
+    text-align:justify;
+    width:100%;   
+}
+
+#container-text div{
+    width:100%; 
+    margin-right: 40px;
+}
+
+#container-text p{
+    width:100%; 
+    font-size: 13pt;
+    font-family: Handlee;
+    color:black;
+}
+
+@media only screen and (max-width:810px){
+    #container-text{
+        flex-direction: column;
+        width: 85%;
+        margin-left:5px; 
+    }
+}

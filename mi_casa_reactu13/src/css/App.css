@@ -1,0 +1,122 @@
+*{margin: 0px;
+  padding:0px;
+  
+}
+
+.slider-frame {
+	width: 100%;
+    height: auto;
+	margin: 0px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.contenedor-contac{
+    display:flex;
+    
+    width:100%
+}
+
+.contenedor-contac form{
+	background-color:#fdfaf6;;
+    font-size: 15pt; 
+    font-family: Handlee;
+    color:rgb(5, 3, 5);
+    padding: 10px;
+    width:50%;
+}
+#img-conta{
+	width:30%;
+}
+input{
+    width:500px;
+    height:30px;
+}
+#mensaje {
+    height:130px;
+}
+
+#mision {
+    
+    display:inline-block;
+    vertical-align: text-bottom;
+    font-size: 15pt; 
+    font-family: Handlee;
+    color:#090804;
+    padding: 10px 20px;
+    text-align:justify;
+    width:90%;
+
+      
+}
+#mision h3{
+    font-family: Handlee;
+    color:#FFCC00;
+    font-size: 23pt;
+    text-align:center;
+       
+}
+#quien {
+    font-size: 15pt; 
+    font-family: Handlee;
+    color:#090804;
+    padding: 10px 20px;
+    text-align:justify;
+    width:90%;
+    color: black;
+}
+#quien h3{
+    font-family: Handlee;
+    color:#FFCC00;
+    font-size: 23pt;
+    text-align:center;     
+}
+@media screen and (max-width:810px){
+	#img-conta{
+		height: 200px;
+		width: 100%;
+		display:block;
+	}
+	.contenedor-contac{
+	flex-direction: column;
+	}
+.contenedor-contac form{
+	padding: 25px;
+	width:auto;
+	margin: auto;
+}
+.contenedor-contac input{
+	margin: auto;
+	width:90%;
+	
+}
+  }
